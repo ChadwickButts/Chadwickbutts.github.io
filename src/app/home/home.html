@@ -1,0 +1,32 @@
+<div class="homePage">
+    <h1>Hi, I'm CHADWICK</h1>
+    <div class="welcomeMessage">
+        <span>a Full Stack Developer with 7+ years of experience building beautiful, scalable web experiences.</span>
+        <br/>
+        <br/>
+        <p>
+            I specialize in crafting clean, high-performance user interfaces and have a strong foundation in 
+            both JavaScript and C#. Whether I’m building with React or architecting backend logic, I focus on 
+            delivering seamless experiences that users love. I thrive in collaborative environments 
+            that challenge me to grow, and I bring a mix of technical precision, creative energy, and 
+            relentless curiosity to every project I touch. I’m currently exploring new opportunities as a 
+            Frontend or Full Stack Engineer—feel free to dive into my latest work and see what I’ve been building.   
+        </p>
+    </div>
+    <div class="actionBtns">
+        <a class="resumeBtn" href="Chadwick_Butts_Fullstack_Resume.pdf" download>
+            Download Resume
+        </a>
+        <a class="projectsBtn" routerLink="/projects">
+            View Projects
+        </a>
+    </div>
+    <div class="skillsSection">
+        <p>TOP SKILLS</p>
+        <div class="skillCards">
+            @for (skill of skills(); track skill.name) {
+                <skill-card [item]="skill" [skillIndex]="$index" animation="animateCards"/>            
+            }
+        </div>
+    </div>
+</div>

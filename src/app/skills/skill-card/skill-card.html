@@ -1,0 +1,7 @@
+<article class="skillCard" [class]="animation()" style="--index: {{ skillIndex() }}; --randx: {{ randomx() }}; --randy: {{ randomy() }}">
+    <div class="cardContent">
+        <img [attr.src]="item().img" role="img" />
+        <h6>{{ item().name }}</h6>
+        <years [yoe]="item().years" />
+    </div>
+</article>

@@ -1,0 +1,56 @@
+
+.timelineItem {
+    position: relative;
+    border-left: 2px solid var(--app-bg-darkest);
+    padding: 0 20px 30px;
+}
+
+.timelineItem::after {
+    width: 9px;
+    height: 9px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    border-radius: 10px;
+    content: '';
+    border: 3px solid var(--app-bg-darker);
+    background: var(--app-bg-darkest);
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.timelineItem h6 {
+    font-size: 16px;
+    color: var(--app-sub-color);
+    margin: 10px 0;
+}
+
+.jobInfo {
+    position: relative;
+    top: -3px;
+    margin-bottom: 20px;
+}
+
+.jobContainer {
+    opacity: 100;
+    animation-name: slideUp;
+    animation-duration: 3s;
+    animation-timing-function:  ease-out;
+}
+.jobDuties p {
+    line-height: 1.2;
+    width: 450px;
+}
+
+
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translate(0px, 900px) }
+    50% { transform: trnaslate(0px, 450px) }
+    100% { opacity: 100; transform: translate(0px, 0px) }
+}

@@ -1,0 +1,11 @@
+<div class="experiencePage">
+    <h1>EXPERIENCE</h1>
+    <a class="resumeBtn" href="Chadwick_Butts_Fullstack_Resume.pdf" download>
+       Download Resume
+    </a>
+    <div class="timeline">
+        @for (job of jobs(); track job.id) {
+            <role [job]="job" />
+        }
+    </div>
+</div>

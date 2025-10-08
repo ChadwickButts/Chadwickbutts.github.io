@@ -1,0 +1,25 @@
+<div class="skillsPage">
+    <h1>SKILLS</h1>
+    <div class="categories">
+        @for (category of categories(); track category.key) {
+            <button type="button" (click)="handleCategoryClick($event)" [class.active]="selectedCategory() === category.key" name={{category.name}} value={{category.key}} >{{category.value}}</button>
+        }
+    </div>
+    <div class="squareLegend">        
+        <div class="fullSquare">
+            <div class="experienceSquare filled"></div>
+            <div class="yoeDescriptor">1 year of experience</div>
+        </div>
+        <div class="halfSquare">
+            <div class="experienceSquare zeroExpContainter">
+                <div class="zeroExp"></div>
+            </div>
+            <div class="yoeDescriptor">< 1 year</div>
+        </div>
+    </div>
+    <section class="skillCards"  >
+        @for (skill of selectedSkills(); track skill.name) {
+            <skill-card [item]="skill" [skillIndex]="$index" animation="flyCards"/>            
+        }
+    </section>
+</div>

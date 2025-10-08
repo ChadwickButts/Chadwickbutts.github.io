@@ -1,0 +1,29 @@
+<div class="contactPage">
+    <h1>CONTACT</h1>
+    <form class="contactForm" [formGroup]="visitorContact" (ngSubmit)="onSubmit()">
+        <label for="name">
+            <input class="textField nameField" type="text" name="name" placeholder="Name" formControlName="contactName" />
+        </label>
+        <label for="email">            
+            <input class="textField emailField" type="email" name="email" placeholder="Email" formControlName="email" />
+        </label>
+        <label for="message">
+            <textarea class="textField" name="message" 
+            formControlName="message" rows="5"placeholder="Message">            
+            </textarea>
+        </label>
+        <button class="submitBtn" type="submit" [disabled]="!visitorContact.valid">Send</button>
+    </form>
+    <div class="socialLinks">
+        <div class="githubSocial">
+            <a href="https://github.com/chadwickbutts" target="_blank" title="GitHub Profile">
+                <img src="images/socials/github-mark-white.svg" alt="GitHub logo link" role="img"/>
+            </a>                
+        </div>
+        <div class="linkedInSocial">
+            <a href="https://www.linkedin.com/in/chadwick-butts-a7795999/" target="_blank" title="LinkedIn Profile">
+                <img src="images/socials/InBug-White.png" alt="LinkedIn logo link" role="img"/>
+            </a>                
+        </div>
+    </div>
+</div>

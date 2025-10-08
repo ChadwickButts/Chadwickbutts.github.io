@@ -1,0 +1,19 @@
+<article class="projCard" style="--index: {{proj()!.id}}" animate.enter="enterFadeIn">
+    <h5>{{proj()!.projectName}}</h5>
+    <div class="links">
+        <a class="demoBtn" [href]="proj()!.demoLink" target="_blank">
+            View Demo
+        </a>
+        <a class="codeBtn" [href]="proj()!.repo" target="_blank">
+            View Code
+        </a>
+    </div>
+    <h6 class="description">{{proj()!.description}}</h6>
+    <div class="pills">
+        @for (tech of proj()!.stack; track $index) {
+            <div class="techPill">
+                <span>{{tech}}</span>
+            </div>
+        }
+    </div>
+</article>

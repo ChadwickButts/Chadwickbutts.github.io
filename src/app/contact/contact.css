@@ -1,0 +1,46 @@
+.contactPage, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textField {
+    background-color: #555;
+    color: #eee;
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 5px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+textarea.textField {
+    height: 200px;
+    font-size: 14px;
+}
+
+.submitBtn:disabled:hover {
+    background-color: var(--app-bg-darker);
+    cursor: default;
+}
+
+.socialLinks {
+    display: flex;
+    margin: 20px;
+}
+
+.socialLinks a {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.socialLinks div, .submitBtn {
+    margin: 10px;
+}
+
+.socialLinks img {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,22 @@
+<article class="timelineItem" [id]="job().id">
+    <div class="jobContainer" [style.animation-delay]="calculateAnimationDelay(job().id)">
+        @if (job().hasOwnProperty('title')) {
+            <div class="jobInfo">
+                <h5>{{ job().title?.toUpperCase() }}</h5>
+                <h6>{{ job().start + ' - ' + job().end }}</h6>
+                <h6>{{ job().company }}, {{ job().location }}</h6>
+            </div>
+            <div class="jobDuties">
+                @for (duty of job()!.duties; track $index) {
+                <p>{{duty}}</p>
+                }
+            </div>
+        } @else {
+            <div class="jobInfo">
+                <h5>{{ job().university?.toUpperCase() }}</h5>
+                <h6>{{ job().degree + ' in ' + job()!.study }}</h6>
+                <h6>{{ job().graduationDate }}</h6>
+            </div>
+        }
+    </div>
+</article>

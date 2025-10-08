@@ -1,0 +1,16 @@
+<section class="experienceSection">
+@for (year of yoeFilledFunction(); track $index) {
+    @if (year === -1) {
+        <div class="experienceSquare zeroExpContainter">
+            <div class="zeroExp"></div>
+        </div>
+    } @else {
+        <div class="experienceSquare" [class.filled]="addFillClass(year)"></div>
+    }
+}
+@if (yoe() === 0) {
+    <span class="expTooltip">< 1 year</span>
+} @else {
+    <span class="expTooltip">{{ yoe() }} years</span>
+}
+</section>

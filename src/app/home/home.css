@@ -1,0 +1,61 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.welcomeMessage {
+    width: 700px;
+    margin: 20px auto;
+    line-height: 1.75;
+    text-align: center;
+
+    animation: 3s fadein ease;
+}
+
+.welcomeMessage p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 20px;
+}
+
+.actionBtns {
+    display: flex;
+    text-align: center;
+}
+
+.actionBtns a {
+    width: 140px;
+    margin: 20px;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    animation: 1s slidein ease-out;
+}
+
+.skillCards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@keyframes fadein {
+    0% { opacity: 0}
+    100% { opacity: 1}
+}
+
+@keyframes slidein {
+    0% { transform: translateX(300px)}
+    90% { transform: translateX(-50px)}
+    100% { transform: translateX(0)}
+}

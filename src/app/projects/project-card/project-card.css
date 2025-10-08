@@ -1,0 +1,59 @@
+.projCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border: 1px solid #111;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;   
+}
+
+.enterFadeIn {
+    opacity: 0;
+    animation: fadein 1.5s ease-in calc(var(--index)*100ms);
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+h5 {
+    margin: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.links a {
+    margin: 10px; 
+}
+
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.techPill {
+    font-size: 14px;
+    background-color: #555;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 5px;
+}
+

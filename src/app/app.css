@@ -1,0 +1,91 @@
+.appcontainer.light {
+  --app-color: #111;
+  --app-sub-color: #333;
+  --app-bg: #fff;
+  --app-bg-darker: #ddd; 
+  --app-bg-darkest: #aaa; 
+  --app-border-color: #aaa;
+}
+
+.appcontainer {
+  --app-color: #eee;
+  --app-sub-color: #999;
+  --app-bg: #111; 
+  --app-bg-darker: #333; 
+  --app-bg-darkest: #555; 
+  --app-border-color: #555;
+}
+
+.appcontainer {
+  background-color: var(--app-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+button, a {
+    margin: 5px;
+    border: 1px solid var(--app-bg);
+    box-shadow: 0px 2px 2px var(--app-bg);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--app-bg-darker);
+    color: var(--app-color);
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    background-color: var(--app-bg-darkest);
+    cursor: pointer;
+}
+
+button.themeBtn {
+  text-align: center; 
+  padding: 7px 8px;
+  display: none;
+}
+
+
+main {
+  color: var(--app-color);
+  background-color: var(--app-bg);
+  min-height: 100vh;
+  min-width: 1000px;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--app-border-color);
+  justify-content: space-between; 
+  align-items: center;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav>.links a {
+  text-decoration: none;
+}
+
+
+/* nav>.links button:hover {
+  border: 0px;
+  border-radius: 10px;
+  background-color: var(--app-bg-darkest);
+  color: var(--app-color);
+}
+
+nav>.links a:hover {
+  background-color: var(--app-bg-darkest);
+} */
+
+nav>.links a.active {
+  background-color: var(--app-bg);
+}
+
+.content {
+  padding: 30px 0;
+}
