@@ -26,7 +26,7 @@ export class Projects {
         , description: `A simple RESTful API with basic CRUD operations for a personal 
           blogging platform.`
         , demoLink: ''
-        , repo: 'https://github.com/ChadwickButts/Blogging-Platform-Project'
+        , repo: 'https://github.com/ChadwickButts/Blogging-Platform-Project/tree/main/BackendOnly/BloggingPlatform/Node'
     }
   ])
 }
