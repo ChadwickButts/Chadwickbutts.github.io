@@ -18,69 +18,13 @@
 
 .categories {
     margin: 5px auto;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.categories button {
-    margin: 5px;
-    border: 1px solid var(--app-bg-darker);
-    box-shadow: 0px 2px 2px var(--app-bg);
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: var(--app-bg-darker);
-    color: var(--app-color);
-}
-
-.categories button:hover {
-    background-color: var(--app-bg-darkest);
-}
-
 .categories button.active {
     background-color: var(--app-bg);
     border: 1px solid var(--app-border-color);
-}
-
-.squareLegend {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.fullSquare, .halfSquare {
-    display: flex;  
-    align-items: center;
-}
-
-.yoeDescriptor {
-    flex: 1;
-    font-size: 12px;
-    margin: 0 5px; 
-}
-
-.experienceSquare {
-    flex: 1;
-    max-width: 10px;
-    min-width: 10px;
-    height: 10px;
-    background-color: var(--app-bg-darkest);
-    border: 1px solid var(--app-bg-darker);
-    margin: 1px;
-    border-radius: 2px;
-}
-
-.filled {
-    background-color: aqua;
-}
-
-.zeroExpContainter {
-    overflow: hidden;
-}
-
-.zeroExp {
-    width: 0px;
-    height: 0px;
-    border-top: 9px solid var(--app-bg-darkest);
-    border-left: 8px solid aqua;
 }

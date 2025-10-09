@@ -1,7 +1,7 @@
 <article class="projCard" style="--index: {{proj()!.id}}" animate.enter="enterFadeIn">
     <h5>{{proj()!.projectName}}</h5>
     <div class="links">
-        <a class="demoBtn" [href]="proj()!.demoLink" target="_blank">
+        <a class="demoBtn" [href]="proj()!.demoLink" target="_blank" [style.display]="hideButton()">
             View Demo
         </a>
         <a class="codeBtn" [href]="proj()!.repo" target="_blank">

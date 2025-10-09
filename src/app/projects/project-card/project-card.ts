@@ -8,4 +8,12 @@ import { Component, input } from '@angular/core';
 })
 export class ProjectCard {
   proj = input<project>();
+
+  hideButton() {
+    if (this.proj()?.demoLink === '') {
+      return 'none';
+    }
+
+    return '';
+  }
 }

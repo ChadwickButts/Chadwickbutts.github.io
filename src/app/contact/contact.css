@@ -16,7 +16,10 @@
 
 textarea.textField {
     height: 200px;
-    font-size: 14px;
+}
+
+.submitBtn:disabled {
+    color: var(--app-sub-color);
 }
 
 .submitBtn:disabled:hover {
@@ -31,6 +34,8 @@ textarea.textField {
 
 .socialLinks a {
     background-color: transparent;
+    box-shadow: none;
+    border: none;
     display: inline-block;
     margin: 0px;
     padding: 0px;

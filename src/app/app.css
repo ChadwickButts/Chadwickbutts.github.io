@@ -11,6 +11,7 @@
   --app-color: #eee;
   --app-sub-color: #999;
   --app-bg: #111; 
+  --box-shadowOnly: #000;
   --app-bg-darker: #333; 
   --app-bg-darkest: #555; 
   --app-border-color: #555;
@@ -28,7 +29,7 @@
 button, a {
     margin: 5px;
     border: 1px solid var(--app-bg);
-    box-shadow: 0px 2px 2px var(--app-bg);
+    box-shadow: 0px 2px 2px var(--box-shadowOnly);
     padding: 5px 10px;
     border-radius: 10px;
     background-color: var(--app-bg-darker);
@@ -71,21 +72,53 @@ nav>.links a {
 }
 
 
-/* nav>.links button:hover {
-  border: 0px;
-  border-radius: 10px;
-  background-color: var(--app-bg-darkest);
-  color: var(--app-color);
-}
-
-nav>.links a:hover {
-  background-color: var(--app-bg-darkest);
-} */
-
 nav>.links a.active {
   background-color: var(--app-bg);
 }
 
 .content {
   padding: 30px 0;
+}
+
+.squareLegend {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto 5px auto;
+}
+
+.fullSquare, .halfSquare {
+    display: flex;  
+    align-items: center;
+}
+
+.yoeDescriptor {
+    flex: 1;
+    font-size: 12px;
+    margin: 0 5px; 
+}
+
+.experienceSquare {
+    flex: 1;
+    max-width: 10px;
+    min-width: 10px;
+    height: 10px;
+    background-color: var(--app-bg-darkest);
+    border: 1px solid var(--app-bg-darker);
+    margin: 1px;
+    border-radius: 2px;
+}
+
+.filled {
+    background-color: aqua;
+}
+
+.zeroExpContainter {
+    overflow: hidden;
+}
+
+.zeroExp {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid var(--app-bg-darkest);
+    border-left: 10px solid aqua;
 }

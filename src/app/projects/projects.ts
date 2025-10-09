@@ -25,7 +25,7 @@ export class Projects {
       stack: ['Node', 'Express']
         , description: `A simple RESTful API with basic CRUD operations for a personal 
           blogging platform.`
-        , demoLink: 'https://redesigned-funicular-g4v67qwr654cp97r-3000.app.github.dev/'
+        , demoLink: ''
         , repo: 'https://redesigned-funicular-g4v67qwr654cp97r.github.dev/'
     }
   ])

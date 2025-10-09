@@ -16,8 +16,9 @@ export class Contact {
 
 
   onSubmit() {
-    let subject = 'Exciting Job Opportunity';
-    window.location.href = `mailto:chadwick.c.butts@gmail.com?subject=${subject}&body=${this.visitorContact.value.message}`;
-    console.log(this.visitorContact.value);    
+    const subject = 'Exciting Job Opportunity';
+    const body = encodeURIComponent(this.visitorContact.value.message as string);
+    window.location.href = `mailto:chadwick.c.butts@gmail.com?subject=${subject}&body=${body}`;
+    console.log(this.visitorContact.value.message);    
   }
 }
