@@ -13,7 +13,7 @@ export class Projects {
       id: 1, projectName: 'Fitness Tracker (In Progress)',
       stack: ['React', 'Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'GraphQL',
         'Apollo Server/Client', 'Material UI'
-      ], description: `Developed an app that allows users to keep track of workouts 
+      ], description: `An app that allows users to keep track of workouts 
           with the ability to choose exercises from a database. Future enhancements 
           will allow users to also record weight, reps, sets, and rest times to be 
           used for calculating the optimal weight to train with for strength gains`
