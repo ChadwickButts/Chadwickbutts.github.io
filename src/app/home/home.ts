@@ -12,6 +12,6 @@ import { skills as data } from '../skillsData';
 })
 export class Home {
   topSkills = ['JavaScript', 'React', 'Angular', '.NET'];
-  
+
   skills = signal(data.filter(skill => this.topSkills.includes(skill.name)));
 }
