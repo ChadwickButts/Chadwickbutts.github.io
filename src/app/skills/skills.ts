@@ -19,7 +19,7 @@ export class Skills {
   ]);
 
   skills = signal([
-    { name: 'React', skill: 'React', years: 2, layer: [1, 2], img: 'images/skills/react_logo.svg' }
+    { name: 'React', skill: 'React', years: 3, layer: [1, 2], img: 'images/skills/react_logo.svg' }
     , { name: 'Angular', skill: 'Angular', years: 3, layer: [1, 2], img: 'images/skills/angular_logo.svg' }
     , { name: 'JavaScript', skill: 'JavaScript', years: 7, layer: [1], img: 'images/skills/javascript_logo.svg' }
     , { name: 'TypeScript', skill: 'TypeScript', years: 2, layer: [1], img: 'images/skills/typescript_logo.webp' }
