@@ -1,15 +1,15 @@
 <div class="contactPage">
     <h1>CONTACT</h1>
     <form class="contactForm" [formGroup]="visitorContact" (ngSubmit)="onSubmit()">
-        <label for="name">
+        <!-- <label for="name">
             <input class="textField nameField" type="text" name="name" placeholder="Name" formControlName="contactName" />
         </label>
         <label for="email">            
             <input class="textField emailField" type="email" name="email" placeholder="Email" formControlName="email" />
-        </label>
+        </label> -->
         <label for="message">
             <textarea class="textField" name="message" 
-            formControlName="message" rows="5"placeholder="Message">            
+            formControlName="message" rows="5"placeholder="Write a message">            
             </textarea>
         </label>
         <button class="submitBtn" type="submit" [disabled]="!visitorContact.valid">Send</button>
