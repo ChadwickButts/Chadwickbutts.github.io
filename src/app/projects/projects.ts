@@ -26,7 +26,7 @@ export class Projects {
         , description: `A simple RESTful API with basic CRUD operations for a personal 
           blogging platform.`
         , demoLink: ''
-        , repo: 'https://redesigned-funicular-g4v67qwr654cp97r.github.dev/'
+        , repo: 'https://github.com/ChadwickButts/Blogging-Platform-Project'
     }
   ])
 }
