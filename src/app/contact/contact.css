@@ -1,3 +1,6 @@
+.contactPage {
+    max-width: 1100px;
+}
 .contactPage, form {
     display: flex;
     flex-direction: column;

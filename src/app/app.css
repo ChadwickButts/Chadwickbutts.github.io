@@ -53,7 +53,7 @@ main {
   color: var(--app-color);
   background-color: var(--app-bg);
   min-height: 100vh;
-  min-width: 1000px;
+  min-width: 1100px;
 }
 
 .header {
