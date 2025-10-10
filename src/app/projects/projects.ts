@@ -27,6 +27,13 @@ export class Projects {
           blogging platform.`
         , demoLink: ''
         , repo: 'https://github.com/ChadwickButts/Blogging-Platform-Project/tree/main/BackendOnly/BloggingPlatform/Node'
+    },
+    {
+      id: 3, projectName: 'Portfolio',
+      stack: ['Angular', 'TypeScript', 'CSS', 'HTML']
+        , description: `This personal portfolio site you're on.`
+        , demoLink: ''
+        , repo: 'https://github.com/ChadwickButts/Chadwickbutts.github.io'
     }
   ])
 }
