@@ -30,7 +30,7 @@ export class Projects {
     {
       id: 3, projectName: 'Portfolio',
       stack: ['Angular 20', 'TypeScript', 'CSS', 'HTML']
-        , description: `This personal portfolio site you're on.`
+        , description: `This personal portfolio site.`
         , demoLink: ''
         , repo: 'https://github.com/ChadwickButts/Chadwickbutts.github.io'
     }
