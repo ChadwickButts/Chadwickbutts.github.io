@@ -21,16 +21,15 @@ export class Projects {
         , repo: `https://github.com/ChadwickButts/HyperStrength-Fitness-Tracker`
     },
     {
-      id: 2, projectName: 'Blogging Platform API',
-      stack: ['Node', 'Express']
-        , description: `A simple RESTful API with basic CRUD operations for a personal 
-          blogging platform.`
+      id: 2, projectName: 'Blogging Platform',
+      stack: [ 'Angular 20', 'Node', 'Express' ]
+        , description: `A personal blog style app that offers simple CRUD functionality.`
         , demoLink: ''
-        , repo: 'https://github.com/ChadwickButts/Blogging-Platform-Project/tree/main/BackendOnly/BloggingPlatform/Node'
+        , repo: 'https://github.com/ChadwickButts/fullstack-projects/tree/master/BloggingPlatform/Node-angular'
     },
     {
       id: 3, projectName: 'Portfolio',
-      stack: ['Angular', 'TypeScript', 'CSS', 'HTML']
+      stack: ['Angular 20', 'TypeScript', 'CSS', 'HTML']
         , description: `This personal portfolio site you're on.`
         , demoLink: ''
         , repo: 'https://github.com/ChadwickButts/Chadwickbutts.github.io'
